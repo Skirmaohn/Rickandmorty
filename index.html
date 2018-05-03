@@ -3,72 +3,91 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Landing Page Template With Flexbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rick and Morty</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/para.js"></script>
 
 </head>
 
 <body>
 
 	<header>
-		<h2><a href="#">Website Logo</a></h2>
+	
+		<h2><img src="img/logo.png" class="start"></h2>
+		
 		<nav>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Ideen</a></li>
-			<li><a href="#">Profil</a></li>
-			<li><a href="#">Kontakt</a></li>
+
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#Charaktere">Charaktere</a></li>
+			<li><a href="#About" id="ff">Fun Facts </a></li>
+			<li><a href="#Zitate">Zitate</a></li>
 		</nav>
 	</header>
 
 
-	<section class="hero">
-		<div class="background-image" style="background-image: url(img/island.jpg);"></div>
-		<h1>Responsive Flexbox Template</h1>
-		<h3>Projektarbeit für IET12 in Internet Technologie.</h3>
+	<section class="hero" id="Home">
+		<img src="img/Opening.jpg" width="600px" class="start"/>
+
 	</section>
-
-
-	<section class="our-work">
-		<h3 class="title">Some of our work</h3>
-		<p> Irgendein Text</p>
-		<hr>
-
-		<ul class="grid">
-			<li class="small" style="background-image: url(img/tastatur.jpg);"></li>
-			<li class="large" style="background-image: url(img/tastatur1.jpg);"></li>
-			<li class="large" style="background-image: url(img/Man.jpg);"></li>
-			<li class="small" style="background-image: url(img/netzwerk.jpg);"></li>
-		</div>
-	</section>
-	
-
-	<section class="features">
-		<h3 class="title">Features and services</h3>
-		<p> Hier sind die Fotos.</p>
+	<section class="features" id="About">
+		<h3 class="title">Fun Facts &uuml;ber Rick and Morty</h3>
+		<p>Rick and Morty wurde von den Autoren Justin Roiland und Dan Harmon kreiert</p>
 		<hr>
 
 		<ul class="grid">
 			<li>
 				<i class="fa fa-camera-retro"></i>
-				<h4>Photography</h4>
-				<p>Fotos von einigen Themen.</p>
+				<h4>Synchronsprecher</h4>
+				<p>Rick und Morty werden von dem Autor Justin Roiland gesprochen</p>
 			</li>
 			<li>
 				<i class="fa fa-cubes"></i>
-				<h4>Web Development</h4>
-				<p> Netzwerke um mehr.</p>
+				<h4>Folgen</h4>
+				<p>31 Folgen auf 3 Staffeln verteilt</p>
 			</li>
 			<li>
 				<i class="fa fa-newspaper-o"></i>
-				<h4>Content Editing</h4>
-				<p>Inhalte editieren.</p>
+				<h4>Brachten MC Donalds dazu ein 20 Jahre altes Produkt wieder einzuführen</h4>
+				<p>Die Szechuan Soße zur Premiere von Mulan</p>
 			</li>
+			<li class="breit">
+				<i class="fa fa-newspaper-o"></i>
+				<h4>Lieben es Fans zu Ärgern</h4>
+				<ul style="list-style:disc">
+				<li>Veröffentlichen am 1.April 2017 ohne Ankündigung die 1. Folge der 3. Staffel. mit folgenden Worten<br>
+				"What if I waved a magic wand and made the first episode from season three premiere tonight. Is that what you’d want?”
+				Unsurprisingly, the fan replied “Yes, that is exactly what I want, and everyone in the entire universe does too,” 
+				to which Harmon responded: <br>“happy now mother FUCKA”.</li>
+				<li>Veröffentlichen Folge 8 der 1 Staffel auf Instagramm in 109 15-Sekunden Clips Rückw&auml;rts</li>
+				</ul>
+			</li>
+			
 		</div>
 	</section>
 
+	<section class="our-work" id="Charaktere">
+		<h3 class="title">Charakter&uuml;bersicht</h3>
+		<p> Wähl dir eine Person aus</p>		
+		<ul class="grid">
+	
+			
+			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Rick.png);" id="Rick"></li>
+			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Morty.jpg);" id='Morty'></li>
+			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Summer.jpg);" id="Summer"></li>
+			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Beth.png);" id="Beth"></li>
+			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Jerry.png);" id="Jerry"></li>
+			<li class="parallelogram2" id="text"></li>
+			
+		</div>
+	</section>
+	
 
-	<section class="reviews">
+
+
+
+	<section class="reviews" id="Zitate">
 		<h3 class="title">What others say:</h3>
 
 		<p class="quote"> Das Leben ist wie eine Schachtel Pralinen, man weiß nie, was man bekommt</p>
@@ -80,7 +99,6 @@
 		<p class="quote">Es gibt Wichtigeres im Leben, als beständig dessen Geschwindigkeit zu erhöhen.</p>
 		<p class="author">— Mahatma Gandi</p>
 
-		
 	</section>
 
 	<footer>
