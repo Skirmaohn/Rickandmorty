@@ -46,13 +46,7 @@ a.btn{
 	text-align: center;
 }
 
-hr{
-	width: 150px;
-	height: 2px;
-	background-color: #2196F3;
-	border: 0;
-	margin-bottom: 80px;
-}
+
 
 section{
 	display: flex;
@@ -60,24 +54,13 @@ section{
 	align-items: center;
 	padding: 20px 10px;
 }
-header{
+header
+	{
 		flex-direction: column;		
 	}
-	.start{
-		margin:0 auto;
-		max-width:100%;
-	}
-/*
-@media (max-width: 1000px){
 
-	section{
-		padding: 100px 50px;
-	}
-
-}
-
-*/
 /*MOBIL*/
+/*NAVI BAR*/
 @media (max-width: 480px){
 
 	
@@ -91,7 +74,7 @@ header{
 	}
 
 }
-
+/* ENDE MOBIL*/
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize; 
@@ -113,6 +96,8 @@ ul.grid{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	line-height:2.0;
+	
 }
 
 header{
@@ -158,14 +143,14 @@ header nav li{
  	Char übersicht
 ---------------------*/
 
-.оur-work{
-	background-color: #fff;
+.chars{
+	background-color: #cccccc;
 }
 
-.our-work .grid li{
+.chars .grid li{
 	/*Char Übersicht*/
 	padding: 2px;
-	height: 175px;
+	height: 300px;
 	border-radius: 3px;
 	background-clip: content-box;
 	background-size: cover;
@@ -205,51 +190,53 @@ header nav li{
 	}
 
 }
-
+/*--------------------
+ 	ENDE Char übersicht
+---------------------*/
 /*----------------------
- 	Features Section
+ 	Fun Facts Section
 ----------------------*/
 
-.features{
-	background-color: #f7f7f7;
+.fun-facts{
+	background-color: #D8D8D8;
 }
 
-.features .grid li{
+.fun-facts .grid li{
 	padding: 0 10px;
 	flex-basis: 33%;
 	text-align: center;
 }
-.features .grid li.breit{
+.fun-facts .grid li.breit{
 	padding: 0;
 	flex-basis: 100%;
 	text-align: center;
 	justify-content:center;
 }
 
-.features .grid li i{
+.fun-facts .grid li i{
     font-size: 50px;
     color: #2196F3;
     margin-bottom: 25px;
 }
 
-.features .grid li h4{
+.fun-facts .grid li h4{
 	color: #555;
     font-size: 20px;
     margin-bottom: 25px;
 }
 
-.features .grid li p{
+.fun-facts .grid li p{
     margin: 0;
 }
 
 @media (max-width: 1000px){
 
-	.features .grid li{
+	.fun-facts .grid li{
 		flex-basis: 70%;
 		margin-bottom: 25px;
 	}
 
-	.features .grid li:last-child{
+	.fun-facts .grid li:last-child{
 		margin-bottom: 0;
 	}
 
@@ -258,12 +245,30 @@ header nav li{
 
 @media (max-width: 600px){
 
-	.features .grid li{
+	.fun-facts .grid li{
 		flex-basis: 100%;
 	}
 
 }
-
+/*----------------------
+ 	ENDE Fun Facts Section
+----------------------*/
+/*----------------------
+ 	Zitate
+----------------------*/
+.quote
+{
+	font-size:15px;
+	font-family:courier new;
+}
+.author
+{
+	font-style:italic;
+	font-size:10px;
+}
+/*----------------------
+ 	ENDE Zitate
+----------------------*/
 /*-------------
  	Footer
 -------------*/
@@ -275,15 +280,9 @@ footer p{
 	margin-bottom: 10px;
 }
 
-footer p a{
-	color: #fff;
-}
 
-@media (max-width: 700px){
 
-	footer{
-		padding: 10px 5px;
-	}
 
-}
-
+/*-------------
+ 	ENDE Footer
+-------------*/

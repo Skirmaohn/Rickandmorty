@@ -16,8 +16,8 @@
 			case "Rick":document.getElementById("text").innerHTML= sHTML + Person[0].Name+"<br> Alter: "+Person[0].Alter+"<br> Herkunft: "+Person[0].Herkunft+"<br> Beruf: "+Person[0].Beruf;break;
 			case "Morty":document.getElementById("text").innerHTML = sHTML +Person[1].Name+"<br> Alter: "+Person[1].Alter+"<br> Herkunft: "+Person[1].Herkunft+"<br> Beruf: "+Person[1].Beruf;break;
 			case "Summer":document.getElementById("text").innerHTML = sHTML +Person[2].Name+"<br> Alter: "+Person[2].Alter+"<br> Herkunft: "+Person[2].Herkunft+"<br> Beruf: "+Person[2].Beruf;break;
-			case "Jerry":document.getElementById("text").innerHTML =sHTML + Person[4].Name+"<br> Alter: "+Person[4].Alter+"<br> Herkunft: "+Person[3].Herkunft+"<br> Beruf: "+Person[3].Beruf;break;
-			case "Beth":document.getElementById("text").innerHTML =sHTML + Person[3].Name+"<br> Alter: "+Person[3].Alter+"<br> Herkunft: "+Person[4].Herkunft+"<br> Beruf: "+Person[4].Beruf;break;
+			case "Beth":document.getElementById("text").innerHTML =sHTML + Person[3].Name+"<br> Alter: "+Person[3].Alter+"<br> Herkunft: "+Person[3].Herkunft+"<br> Beruf: "+Person[3].Beruf;break;
+			case "Jerry":document.getElementById("text").innerHTML =sHTML + Person[4].Name+"<br> Alter: "+Person[4].Alter+"<br> Herkunft: "+Person[4].Herkunft+"<br> Beruf: "+Person[4].Beruf;break;
 			default:document.getElementById("text").innerHTML = "ERROR";
 			}
 		}
