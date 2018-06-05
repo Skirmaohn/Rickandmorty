@@ -3,22 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Rick and Morty</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/para.js"></script>
-
 </head>
 
 <body>
-
+<!--Navi-->
 	<header>
 	
 		<h2><img src="img/logo.png" class="start"></h2>
 		
 		<nav>
-
 			<li><a href="#Home">Home</a></li>
 			<li><a href="#Charaktere">Charaktere</a></li>
 			<li><a href="#About" id="ff">Fun Facts </a></li>
@@ -27,33 +24,31 @@
 	</header>
 
 
-	<section class="hero" id="Home">
+	<section class="bild" id="Home">
 		<img src="img/Opening.jpg" width="600px" class="start"/>
 
 	</section>
+	<!--Fun Facts-->
 	<section class="fun-facts" id="About">
 		<h3 class="title">Fun Facts &uuml;ber Rick and Morty</h3>
 		<p>Rick and Morty wurde von den Autoren Justin Roiland und Dan Harmon kreiert</p>
 		
 
 		<ul class="grid">
-			<li>
-				<i class="fa fa-camera-retro"></i>
+			<li>			
 				<h4>Synchronsprecher</h4>
 				<p>Rick und Morty werden von dem Autor Justin Roiland gesprochen</p>
 			</li>
 			<li>
-				<i class="fa fa-cubes"></i>
 				<h4>Folgen</h4>
 				<p>31 Folgen auf 3 Staffeln verteilt</p>
 			</li>
-			<li>
-				<i class="fa fa-newspaper-o"></i>
+			<li>			
 				<h4>Brachten MC Donalds dazu ein 20 Jahre altes Produkt wieder einzuführen</h4>
 				<p>Die Szechuan Soße zur Premiere von Mulan</p>
 			</li>
 			<li class="breit">
-				<i class="fa fa-newspaper-o"></i>
+				<i></i>
 				<h4>Lieben es Fans zu Ärgern</h4>
 				<ul style="list-style:disc">
 				<li>Veröffentlichen am 1.April 2017 ohne Ankündigung die 1. Folge der 3. Staffel. mit folgenden Worten<br>
@@ -64,30 +59,23 @@
 				</ul>
 			</li>
 			
-		</div>
+
 	</section>
-		
+	<!--Charakterübersicht-->	
 	<section class="chars" id="Charaktere">
 	
 		<h3 class="title">Charakter&uuml;bersicht</h3>
 		<p> Wähl dir eine Person aus</p>		
 		<ul class="grid">
-	
-			
 			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Rick.png);" id="Rick"></li>
 			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Morty.jpg);" id='Morty'></li>
 			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Summer.jpg);" id="Summer"></li>
 			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Beth.png);" id="Beth"></li>
 			<li class="parallelogram" onmouseover="descr(this.id)"style="background-image: url(img/Jerry.png);" id="Jerry"></li>
 			<li class="parallelogram2" id="text"></li>
-			
 		</ul>
 	</section>
-	
-
-
-
-
+	<!--Zitate-->	
 	<section class="reviews" id="Zitate">
 		<h3 class="title">ZITATE</h3>
 

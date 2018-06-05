@@ -25,7 +25,9 @@ ul, nav{
 	list-style: none;
 	
 }
-
+.bild{
+	width:60%;height:auto;
+}
 a{
 	text-decoration: none;
 	cursor: pointer;
@@ -45,7 +47,12 @@ a.btn{
 	font-weight: 800;
 	text-align: center;
 }
-
+.bild{
+	width:100%;
+	min-width:200px;
+	height:auto;
+	
+}
 
 
 section{
@@ -61,7 +68,7 @@ header
 
 /*MOBIL*/
 /*NAVI BAR*/
-@media (max-width: 480px){
+@media (max-width: 600px){
 
 	
 	header nav
@@ -72,8 +79,11 @@ header
 		align-items:center;
 		
 	}
-
+/*Bilder Mobil*/	
+	img { max-width: 100%; }
 }
+
+
 /* ENDE MOBIL*/
 section h3.title{
 	color: #414a4f;
@@ -81,6 +91,7 @@ section h3.title{
 	font: bold 32px 'Open Sans', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
+	padding:2px 10px;
 }
 
 section p{
@@ -117,11 +128,7 @@ header nav{
 header nav li{
 	margin: 0 15px;
 }
-.imgbox{
-	display:grid;
-	height:auto;
-	
-}
+
 @media (max-width: 1000px){
 	header{
 		padding: 20px 50px;
@@ -160,8 +167,6 @@ header nav li{
 	
 	
 }
-
-
 .parallelogram 
 { 
 
@@ -170,6 +175,7 @@ header nav li{
 	-o-transform: skew(20deg);
 	border:2px solid black;
 	flex-basis:14%;
+	max-height:160px;
 	
  }	
 .parallelogram2 
@@ -180,8 +186,33 @@ header nav li{
 	-o-transform: skew(340deg);
 	border:2px solid black;
 	flex-basis:70%;
- }	
+	max-height:160px;
+ }
+/*Charübersicht mobil*/
+@media (max-width: 600px){
 
+.parallelogram 
+{ 
+
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	border:2px solid black;
+	flex-basis:14%;
+	max-height:220px;
+	
+ }	
+.parallelogram2 
+{ 
+	
+	-webkit-transform: skew(340deg);
+	-moz-transform: skew(340deg);
+	-o-transform: skew(340deg);
+	border:2px solid black;
+	flex-basis:70%;
+	max-height:220px;
+ }	
+}
 @media (max-width: 1000px){
 
 	.our-work .grid li.small,
