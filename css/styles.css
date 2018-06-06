@@ -218,6 +218,9 @@ header nav li{
 	flex-basis: 33%;
 	text-align: center;
 }
+.fun-facts .grid ul{
+	list-style:disc
+}
 .fun-facts .grid li.breit{
 	padding: 0;
 	flex-basis: 100%;
