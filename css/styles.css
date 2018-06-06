@@ -158,6 +158,7 @@ header nav li{
 	flex-basis:14%;
 	max-height:260px;
 	
+	
  }	
 .parallelogram2 
 { 
@@ -194,14 +195,7 @@ header nav li{
 	max-height:220px;
  }	
 }
-@media (max-width: 1000px){
 
-	.our-work .grid li.small,
-	.our-work .grid li.large{
-		flex-basis: 100%;
-	}
-
-}
 /*--------------------
  	ENDE Char übersicht
 ---------------------*/
